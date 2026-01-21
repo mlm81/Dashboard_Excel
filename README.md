@@ -1,34 +1,84 @@
-Proyecto Dashboard con Excel
-Descripci�n
-Ejercicio final del m�dulo de Dashboard & Análisis de Datos del master Data Analytic, en el que se ha creado un Dashboard para la compañía IberFarma en el que se analiza su cierre del año 2025 y se analiza el mercado de Rinitis Alérgica en el que compite.
-Estructura
-En el repositorio se encuentra el excel que contiene el dashboard que está formado por las siguientes pestañas:
-- Datos
-- Mapeos
-. Tablas Dinámicas
-- Dashboard
-Requisitos
-Para poder llevar a cabo el proyecto se han necesitado las siguientes herramientas:
-* Excel
-* GitHub
-Limpieza y Transformación de Datos
-Para poder llevar a cabo este proyecto ha sido necesario trabajar los datos originales transformándolos primero a tabla para poder trabajar más eficazmente y depurándolos después para poder obtener los datos correctos.
-Se han creado variables nuevas (identificadas con la palabra "Final" en el nombre) para todos aquellas variables que necesitaban algún ajuste, como por ejemplo Principio Activo_Final (Si venía vacío el campo se buscaba el nombre del producto en la pestaña maestro y se le asignaba)
-En el caso de las variables de euros y unidades, se han completado todos los campos vacios, asumiendo que el precio es siempre el mismo, para ello, en el caso de las unidades se ha formulado para que en caso de estar el campo vacío se calculara el valor correspondiente dividiendo la venta en euros entre el precio, y para los valores incompletos de las ventas, se ha multiplicado el precio por las unidades.
-En la pestaña Tablas dinámicas, se han creado nuevas variables necesarias para el análisis como por ejemplo, los % Crecimiento (% Crec) y las cuotas de mercado (% MS)
-Resultados y conclusiones:
-En la pestaña Dashboard, se puede encontrar un informe dinámico para poder hacer el análisis tanto en Euros como Unidades.
-En la primera parte podemos encontrar la información específica de nuestra compañía que sólo está disponible en Euros
-y a continuación, podemos encontrar la información del mercado en el que competimos. Aquí tenemos disponible información de los competidores, de los productos, de los canales de venta, de las moléculas y de las presentaciones disponibles para cada producto.
-Toda la información refente al mercado puede filtrarse por compañía, regiones y molécula para llevar a cabo un análisis más profundo.
+# Proyecto Dashboard con Excel 📊
 
-En el caso de nuestra compañía podemos ver que ha cerrado 2025 con un crecimiento por encima del mercado con un 7,0%.
+## Descripción
+Este proyecto corresponde al ejercicio final del módulo de Dashboard & Análisis de Datos del Máster en Data Analytics.  
+El objetivo del proyecto es la creación de un dashboard interactivo en Excel para la compañía IberFarma, analizando el cierre del año 2025 y el mercado de Rinitis Alérgica en el que compite.
 
-Tal y como se ve en la gráfica de evolución de ventas compañía, trabajamos en un mercado con mucha estacionalidad en los meses comprendidos entre Marzo y Junio.
+---
 
-Competimos en un mercado mayoritariamente de canal farmacia aunque el canala online ha crecido ligeramente en 2025
+## Objetivo del proyecto
+Aplicar los conceptos aprendidos en el módulo de Dashboard & Análisis de Datos
 
- Autor
-Lourdes Martines Diaz
+---
+
+## Estructura del proyecto
+El repositorio contiene un archivo de Excel que incluye el dashboard, organizado en las siguientes pestañas:
+
+- Datos → base de datos original y transformada
+- Mapeos → tablas maestras y correspondencias
+- Tablas Dinámicas → cálculos y métricas necesarias para el análisis
+- Dashboard → visualización final e interactiva de los resultados
+
+---
+
+## Contenidos trabajados
+Durante la realización de este proyecto se han trabajado los siguientes conceptos:
+
+- Limpieza y transformación de datos en Excel
+- Conversión de datos a tablas para un manejo eficiente
+- Creación de variables calculadas
+- Uso de tablas dinámicas
+- Cálculo de métricas de negocio (crecimiento, cuotas de mercado)
+- Análisis de ventas en euros y unidades
+- Diseño de dashboards interactivos
+- Análisis de mercado y competencia
+
+---
+
+## Limpieza y transformación de datos
+Para llevar a cabo el análisis fue necesario realizar un proceso previo de depuración y transformación de los datos:
+
+- Transformación de los datos originales en tablas
+- Creación de nuevas variables (identificadas con el sufijo _Final) para corregir valores incompletos
+- Asignación del Principio Activo_Final a partir de la pestaña maestro cuando el campo original estaba vacío
+- Completado de valores faltantes en euros y unidades:
+  - Cálculo de unidades dividiendo las ventas en euros entre el precio
+  - Cálculo de ventas en euros multiplicando el precio por las unidades
+- Creación de nuevas métricas en las tablas dinámicas:
+  - Porcentaje de crecimiento (% Crec)
+  - Cuota de mercado (% MS)
+
+---
+
+## Resultados y conclusiones
+En la pestaña Dashboard se presenta un informe dinámico que permite analizar la información tanto en euros como en unidades.
+
+- La primera parte del dashboard muestra la información específica de la compañía, disponible únicamente en euros
+- La segunda parte analiza el mercado, incluyendo:
+  - Competidores
+  - Productos
+  - Canales de venta
+  - Moléculas
+  - Presentaciones
+
+Toda la información del mercado puede filtrarse por compañía, región y molécula, permitiendo un análisis más detallado.
+
+Como principales conclusiones:
+- IberFarma cierra el año 2025 con un crecimiento del 7,0%, por encima del mercado
+- El mercado presenta una fuerte estacionalidad entre los meses de marzo y junio
+- El canal farmacia es el predominante, aunque el canal online muestra un ligero crecimiento en 2025
+
+---
+
+## Requisitos
+Para revisar y utilizar el proyecto es necesario disponer de:
+
+- Microsoft Excel
+- GitHub
+
+---
+
+## Autor
+Lourdes Martínez Díaz
 
 
